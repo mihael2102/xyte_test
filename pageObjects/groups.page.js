@@ -7,18 +7,19 @@ class Group {
 
         this.nameTxt = "//input[@name='name']";
         this.createBtn = "//button[@type='submit']";
-        this.addNewUserBtn = "css=span >> text='Create Group'";
+        this.createGroupBtn = "css=span >> text='Create Group'";
         this.groupsTable = "//*[@role='rowgroup']";
     }
 
     async createGroup(groupName) {
         await log("create group %s", groupName);
-        await this.page.click(this.addNewUserBtn);
+        await this.page.click(this.createGroupBtn);
         await this.page.fill(this.nameTxt, groupName);
         await this.page.click(this.createBtn);
     }
 
     async verifyGroupCreated(groupName) {
+        await log("verify created group in the table");
         const tableRows = await this.page.locator(this.groupsTable);
         await expect(tableRows).toContainText(groupName, { timeout: 15000 });
     }

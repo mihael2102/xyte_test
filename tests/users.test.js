@@ -12,13 +12,22 @@ test.describe("Users page tests", async () => {
         await loginPage.login(userData.username, userData.password);
     });
 
-    test("add new user test", async ({ page }) => {
+    test("add new user: positive test", async ({ page }) => {
         const usersPage = new users(page);
         const userName = 'userName_'.concat(Math.random().toString(36).slice(2));
         const email = 'test'.concat(Math.random().toString(36).slice(2)).concat('@test.com');
 
-        await usersPage.addNewUser(userName, email);
+        await usersPage.addNewUser(userName, email, true);
         await usersPage.verifyUserCreated(userName);
+    });
+
+    test("add new user with invalid email: negative test", async ({ page }) => {
+        const usersPage = new users(page);
+        const userName = 'userName_'.concat(Math.random().toString(36).slice(2));
+        const email = 'test';
+
+        await usersPage.addNewUser(userName, email, false);
+        await usersPage.verifyEmailValidationMsg();
     });
 
 });
