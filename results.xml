@@ -1,0 +1,165 @@
+<testsuites id="" name="" tests="2" failures="1" skipped="0" errors="0" time="14.786695999622346">
+<testsuite name="groups.test.js" timestamp="1674242362875" hostname="" tests="1" failures="0" skipped="0" time="4.97" errors="0">
+<testcase name="Groups page tests create group test" classname="groups.test.js › Groups page tests › create group test" time="4.97">
+<system-out>
+<![CDATA[09:19:24 PM api => browser.newContext started
+09:19:24 PM api <= browser.newContext succeeded
+09:19:24 PM api => browserContext.newPage started
+09:19:24 PM api <= browserContext.newPage succeeded
+09:19:24 PM api => page.goto started
+09:19:26 PM api <= page.goto succeeded
+09:19:26 PM api => page.fill started
+09:19:26 PM api <= page.fill succeeded
+09:19:26 PM api => page.fill started
+09:19:26 PM api <= page.fill succeeded
+09:19:26 PM api => page.click started
+09:19:26 PM api <= page.click succeeded
+09:19:26 PM api => page.click started
+09:19:27 PM api <= page.click succeeded
+09:19:27 PM api => page.fill started
+09:19:27 PM api <= page.fill succeeded
+09:19:27 PM api => page.click started
+09:19:27 PM api <= page.click succeeded
+09:19:27 PM api => expect.toContainText started
+09:19:28 PM api <= expect.toContainText succeeded
+09:19:28 PM api => browserContext.close started
+09:19:28 PM api <= browserContext.close succeeded
+]]>
+</system-out>
+<system-err>
+<![CDATA[login with user: mihail210285@gmail.com
+create group groupNameli6hyh8zwaf
+]]>
+</system-err>
+</testcase>
+</testsuite>
+<testsuite name="users.test.js" timestamp="1674242362875" hostname="" tests="1" failures="1" skipped="0" time="6.692" errors="0">
+<testcase name="Users page tests add new user test" classname="users.test.js › Users page tests › add new user test" time="6.692">
+<failure message="users.test.js:15:5 add new user test" type="FAILURE">
+<![CDATA[  users.test.js:15:5 › Users page tests › add new user test ========================================
+
+    TypeError: users is not a constructor
+
+      14 |
+      15 |     test("add new user test", async ({ page }) => {
+    > 16 |         const usersPage = new users(page);
+         |                           ^
+      17 |         const userName = 'userName_'.concat(Math.random().toString(36).slice(2));
+      18 |         const email = 'test'.concat(Math.random().toString(36).slice(2)).concat('@test.com');
+      19 |
+
+        at /Users/michael/WebstormProjects/xyte_test/tests/users.test.js:16:27
+
+    attachment #1: screenshot (image/png) ----------------------------------------------------------
+    test-results/users-Users-page-tests-add-new-user-test/test-failed-1.png
+    ------------------------------------------------------------------------------------------------
+
+    Retry #1 ---------------------------------------------------------------------------------------
+
+    TypeError: users is not a constructor
+
+      14 |
+      15 |     test("add new user test", async ({ page }) => {
+    > 16 |         const usersPage = new users(page);
+         |                           ^
+      17 |         const userName = 'userName_'.concat(Math.random().toString(36).slice(2));
+      18 |         const email = 'test'.concat(Math.random().toString(36).slice(2)).concat('@test.com');
+      19 |
+
+        at /Users/michael/WebstormProjects/xyte_test/tests/users.test.js:16:27
+
+    attachment #1: screenshot (image/png) ----------------------------------------------------------
+    test-results/users-Users-page-tests-add-new-user-test-retry1/test-failed-1.png
+    ------------------------------------------------------------------------------------------------
+
+    Retry #2 ---------------------------------------------------------------------------------------
+
+    TypeError: users is not a constructor
+
+      14 |
+      15 |     test("add new user test", async ({ page }) => {
+    > 16 |         const usersPage = new users(page);
+         |                           ^
+      17 |         const userName = 'userName_'.concat(Math.random().toString(36).slice(2));
+      18 |         const email = 'test'.concat(Math.random().toString(36).slice(2)).concat('@test.com');
+      19 |
+
+        at /Users/michael/WebstormProjects/xyte_test/tests/users.test.js:16:27
+
+    attachment #1: screenshot (image/png) ----------------------------------------------------------
+    test-results/users-Users-page-tests-add-new-user-test-retry2/test-failed-1.png
+    ------------------------------------------------------------------------------------------------
+]]>
+</failure>
+<system-out>
+<![CDATA[09:19:28 PM api => browser.newContext started
+09:19:29 PM api <= browser.newContext succeeded
+09:19:29 PM api => browserContext.newPage started
+09:19:29 PM api <= browserContext.newPage succeeded
+09:19:29 PM api => page.goto started
+09:19:30 PM api <= page.goto succeeded
+09:19:30 PM api => page.fill started
+09:19:30 PM api <= page.fill succeeded
+09:19:30 PM api => page.fill started
+09:19:30 PM api <= page.fill succeeded
+09:19:30 PM api => page.click started
+09:19:31 PM api <= page.click succeeded
+09:19:31 PM api => page.screenshot started
+09:19:31 PM api <= page.screenshot succeeded
+09:19:31 PM api => browserContext.close started
+09:19:31 PM api <= browserContext.close succeeded
+09:19:31 PM api => browser.close started
+09:19:31 PM api <= browser.close succeeded
+
+[[ATTACHMENT|../test-results/users-Users-page-tests-add-new-user-test/test-failed-1.png]]
+09:19:32 PM api => browser.newContext started
+09:19:32 PM api <= browser.newContext succeeded
+09:19:32 PM api => browserContext.newPage started
+09:19:32 PM api <= browserContext.newPage succeeded
+09:19:32 PM api => page.goto started
+09:19:33 PM api <= page.goto succeeded
+09:19:33 PM api => page.fill started
+09:19:33 PM api <= page.fill succeeded
+09:19:33 PM api => page.fill started
+09:19:34 PM api <= page.fill succeeded
+09:19:34 PM api => page.click started
+09:19:34 PM api <= page.click succeeded
+09:19:34 PM api => page.screenshot started
+09:19:34 PM api <= page.screenshot succeeded
+09:19:34 PM api => browserContext.close started
+09:19:34 PM api <= browserContext.close succeeded
+09:19:34 PM api => browser.close started
+09:19:34 PM api <= browser.close succeeded
+
+[[ATTACHMENT|../test-results/users-Users-page-tests-add-new-user-test-retry1/test-failed-1.png]]
+09:19:35 PM api => browser.newContext started
+09:19:35 PM api <= browser.newContext succeeded
+09:19:35 PM api => browserContext.newPage started
+09:19:35 PM api <= browserContext.newPage succeeded
+09:19:35 PM api => page.goto started
+09:19:36 PM api <= page.goto succeeded
+09:19:36 PM api => page.fill started
+09:19:37 PM api <= page.fill succeeded
+09:19:37 PM api => page.fill started
+09:19:37 PM api <= page.fill succeeded
+09:19:37 PM api => page.click started
+09:19:37 PM api <= page.click succeeded
+09:19:37 PM api => page.screenshot started
+09:19:37 PM api <= page.screenshot succeeded
+09:19:37 PM api => browserContext.close started
+09:19:37 PM api <= browserContext.close succeeded
+09:19:37 PM api => browser.close started
+09:19:37 PM api <= browser.close succeeded
+
+[[ATTACHMENT|../test-results/users-Users-page-tests-add-new-user-test-retry2/test-failed-1.png]]
+]]>
+</system-out>
+<system-err>
+<![CDATA[login with user: mihail210285@gmail.com
+login with user: mihail210285@gmail.com
+login with user: mihail210285@gmail.com
+]]>
+</system-err>
+</testcase>
+</testsuite>
+</testsuites>

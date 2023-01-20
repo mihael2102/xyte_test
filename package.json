@@ -1,0 +1,19 @@
+{
+  "name": "xyte_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.29.2"
+  },
+  "dependencies": {
+    "debug": "^4.3.4",
+    "moment": "^2.29.4"
+  }
+}
