@@ -1,4 +1,4 @@
-# payem-automation-tests
+# automation-tests
 automation tests
 
 ## Tools:

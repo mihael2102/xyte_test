@@ -1,0 +1,14 @@
+# Dependency directories
+node_modules/
+
+# Reports
+my-report/
+test-results/
+report/
+playwright-report/
+.vscode/
+
+# logs
+*.log
+*.xml
+*.html
